@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+
+.titularInfo {
+    margin-top: 20px;
+    height: max-content;
+    width: 88%;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.titularInfo span {
+    font-size: 24px;
+    letter-spacing: .3px;
+}
+
+.cuerpoInfo {
+    font-size: 15px;
+    width: 85%;
+    padding-right: 10px;
+    color: #fff;
+    font-weight: 200;
+    line-height: 24px;
+    margin-top: 4px;
+}
+
+.btnBlog {
+    margin: 10px 0 20px 0;
+    width: 175px;
+    height: 37px;
+    background: none;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 400;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 37px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.btnBlog:hover { width: 185px; }

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cuadroArchivo.css">
+    <link rel="stylesheet" href="css/cuadroOpciones.css">
+    <link rel="stylesheet" href="css/cuadroInfo.css">
+    <link rel="stylesheet" href="css/cuadroPresentacion.css">
+    <link rel="stylesheet" href="css/mediaQueries.css">
+    <link rel="shortcut icon" href="img/faviconFoxit.png">
+    <script defer src="js/main.js"></script>
+    <title>Inicio de Foxit</title>
+</head>
+
+<body>
+    <div class="fondo">
+        <div class="desplegarArchivo" id="btnDesplegarArchivo" title="Panel de archivos">
+            <svg class="i-archivo" focusable="no" viewBox= "0 0 24 24"><path d="m12.707 7.707-1.414-1.414L5.586 12l5.707 5.707 1.414-1.414L8.414 12z"></path><path d="M16.293 6.293 10.586 12l5.707 5.707 1.414-1.414L13.414 12l4.293-4.293z"></path></svg>
+            <p>Panel de archivos</p>
+        </div>
+        <div id="cuadroArchivo" class="cuadroArchivo oculto">
+            <div class="cabecera">
+                <h6>Archivos recientes</h6>
+                <div class="basuraContenedor" title="Borrar">
+                    <svg class="i-basura" viewBox="0 0 24 24" focusable="no">
+                        <path
+                            d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z">
+                        </path>
+                        <path d="M9 10h2v8H9zm4 0h2v8h-2z"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="lineaIntermedia"></div>
+            <div class="opcion">
+                <svg class="i-carpeta" viewBox="0 0 24 24" focusable="no">
+                    <path
+                        d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z">
+                    </path>
+                </svg>
+                <div class="file-open">
+                    <input type="file" id="abrirArchivo" name="file-open">
+                    <label for="file-open" title="Abrir...">Abrir</label>
+                </div>
+            </div>
+        </div> <!-- Cuadro Archivo -->
+
+        <div class="separadorPrincipal">
+
+            <div class="cuadroPresentacion">
+                <div class="cabeceraPresentacion">
+                    <h1 class="negrita italicaT">Foxit PhantomPDF</h1>
+                    <h2>Cree, edite y administre <span class="subrayado">PDF</span></h2>
+                    <p>"Sin lugar a dudas, vence a Acrobat en todas las áreas".</p>
+                    <div class="sublinea">
+                        <div class="puntuacion">
+                            <img src="img/5-star-rating.png" alt="Cinco estrellas">
+                            <p>4,6 de 5</p>
+                        </div>
+                        <div class="lineaPleca">|</div>
+                        <div class="masInfo">Más información</div>
+                    </div>
+                </div>
+                <div class="imagenPresentacion">
+                    <img src="img/phantom-title-image.png" alt="Uso de las TICs">
+                </div>
+                <div class="botonesPresentacion">
+                    <button class="btnPrueba" type="button">Probar PhantomPDF gratis por 14 días</button>
+                    <button class="btnLicencia" type="button">Obtener licencias por volumen</button>
+                </div>
+            </div> <!-- Cuadro Presentación -->
+
+            <div class="separadorSecundario">
+
+                <div class="cuadroOpciones">
+                    <div class="titularHerramientas"><span class="negrita italicaT">Aproveche</span> las herramientas en
+                        línea de Foxit <span class="subrayado">gratis</span></div>
+                    <div class="funcionesPDF">
+                        <div class="columnaFuncion col1">
+                            <div class="funcion">
+                                <p title="Empiece a convertir">PDF a Word</p>
+                                <svg class="i-flecha" viewBox="0 0 24 24" focusable="no" width="24" height="24">
+                                    <path
+                                        d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div class="lineaDeFuncion"></div>
+
+                            <div class="funcion">
+                                <p title="Empiece a convertir">Word a PDF</p>
+                                <svg class="i-flecha" viewBox="0 0 24 24" focusable="no" width="24" height="24">
+                                    <path
+                                        d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div class="lineaDeFuncion"></div>
+
+                            <div class="funcion">
+                                <p title="Empiece a convertir">Fusionar PDF</p>
+                                <svg class="i-flecha" viewBox="0 0 24 24" focusable="no" width="24" height="24">
+                                    <path
+                                        d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div class="lineaDeFuncion"></div>
+
+                            <div class="funcion">
+                                <p title="Empiece a convertir">Comprimir PDF</p>
+                                <svg class="i-flecha" viewBox="0 0 24 24" focusable="no" width="24" height="24">
+                                    <path
+                                        d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div class="lineaDeFuncion"></div>
+
+                            <div class="funcion">
+                                <p title="Empiece a convertir">PDF a Excel</p>
+                                <svg class="i-flecha" viewBox="0 0 24 24" focusable="no" width="24" height="24">
+                                    <path
+                                        d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="columnaFuncion col2">
+                            <div class="funcion">
+                                <p title="Empiece a convertir">PDF a JPG</p>
+                                <svg class="i-flecha" viewBox="0 0 24 24" focusable="no" width="24" height="24">
+                                    <path
+                                        d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div class="lineaDeFuncion"></div>
+
+                            <div class="funcion">
+                                <p title="Empiece a convertir">JPG a PDF</p>
+                                <svg class="i-flecha" viewBox="0 0 24 24" focusable="no" viewBox="0 0 24 24"
+                                    focusable="no" width="24" height="24">
+                                    <path
+                                        d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div class="lineaDeFuncion"></div>
+
+                            <div class="funcion">
+                                <p title="Empiece a convertir">PDF a PPT</p>
+                                <svg class="i-flecha" viewBox="0 0 24 24" focusable="no" width="24" height="24">
+                                    <path
+                                        d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div class="lineaDeFuncion"></div>
+
+                            <div class="funcion">
+                                <p title="Empiece a convertir">PPT a PDF</p>
+                                <svg class="i-flecha" viewBox="0 0 24 24" focusable="no" width="24" height="24">
+                                    <path
+                                        d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div class="lineaDeFuncion"></div>
+
+                            <div class="funcion">
+                                <p title="Empiece a convertir">Excel a PDF</p>
+                                <svg class="i-flecha" viewBox="0 0 24 24" focusable="no" width="24" height="24">
+                                    <path
+                                        d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- Cuadro Opciones -->
+                <div class="cuadroInfo">
+                    <div class="imagenFondo">
+                        <div class="titularInfo"><span class="negrita italicaT">Administre PDF</span> como un <span
+                                class="subrayado">profesional</span></div>
+                        <div class="cuerpoInfo">
+                            <p>Manténgase un paso adelante de la competencia con conocimiento actualizado sobre los PDF,
+                                así como consejos y trucos gratis sobre la creación y edición de documentos.</p>
+                        </div>
+                        <button class="btnBlog" type="button">Leer el blog de Foxit</button>
+                    </div>
+                </div> <!-- Cuadro Info -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

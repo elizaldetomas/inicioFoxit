@@ -1,0 +1,129 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+
+.cabecera {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.basuraContenedor{
+    width: 50px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.i-basura {
+    fill: #9b9b9b;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.cabecera h6 {
+    width: 233px;
+    margin: 0;
+    padding: 10px 0 0 10px;
+    font-size: 14px;
+    color: #272727;
+    font-weight: 400;
+}
+
+.lineaIntermedia {
+    background-color: #e7e7e7;
+    margin: 8px auto;
+    height: 1px;
+    width: 280px;
+    padding: 0;
+}
+
+.opcion {
+   width: 100%;
+   height: max-content;
+   display: flex;
+   flex-direction: row;
+   margin-left: 10px;
+}
+
+
+.i-carpeta {
+    fill: #eab766;
+    width: 24px;
+    padding-bottom: 6px;
+}
+
+.file-open {
+    display: flex;
+    font-size: 14px;
+    padding-left: 4px;
+    position: relative;
+}
+
+.file-open label {
+    position: absolute;
+    padding-top: 6px;
+    font-size: 13px;
+    color: #363636;
+    pointer-events: none;
+}
+
+.file-open input[type="file"] {
+    opacity: 0;
+    width: 28px;
+    height: 20px;
+}
+
+/* BOTON DESPLEGABLE */
+.desplegarArchivo {
+    position: fixed;
+    z-index: 7;
+    top: 4%;
+    right: 4%;
+    width: 18px;
+    height: 18px;
+    padding: 8px;
+    border: 2px solid #f36b16;
+    border-radius: 100%;
+    background-color: #f36b16;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.432);
+    cursor: pointer;
+    transition: .25s ease-in-out;
+    visibility: hidden;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.desplegarArchivo p {
+    display: none;
+    font-weight: 300;
+    width: max-content;
+    margin: 0;
+    font-family: Poppins;
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+.i-archivo {
+    fill: #fff;
+    transform: scale(1.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desplegarArchivo:hover {
+    box-shadow: 0 0 20px #f36b16;
+}

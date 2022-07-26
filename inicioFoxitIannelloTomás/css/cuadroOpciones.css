@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+
+.titularHerramientas {
+    width: 90%;
+    margin: 28px 20px 28px 28px;
+    height: 70px;
+    color: #fff;
+    font-size: 29px;
+    font-weight: 300;
+    line-height: 27px;
+}
+
+.italicaT { font-style: italic; font-size: 31px; }
+
+.funcionesPDF {
+    width: 88%;
+    margin-left: 28px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    overflow: hidden;
+    user-select: none;
+}
+
+.columnaFuncion {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.col2 {
+    transform: translateX(5%);
+}
+
+.funcion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+    line-height: 14px;
+}
+
+.funcion p {
+    margin: 0;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.funcion p:hover { text-decoration: underline; }
+
+.funcion svg {
+    fill: #fff;
+    width: 19px;
+    margin-top: 2px;
+    transform: rotate(45deg);
+}
+
+.lineaDeFuncion {
+    margin: 8px 0;
+    height: 1px;
+    width: 98%;
+    background-color: #fff;
+}

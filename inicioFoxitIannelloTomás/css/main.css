@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth; /* scroll más suave */
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #a5a5a5;
+    font-family: Roboto;
+    display: flex;
+    justify-content: center;
+}
+
+.negrita { font-weight: bold; }
+.subrayado { text-decoration: underline; }
+
+.fondo {
+    width: calc(100%-30px);
+    height: max-content;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch; /* misma altura para los divs hijos */
+    padding: 15px 15px;
+}
+
+.cuadroArchivo {
+    width: 300px;
+    min-height: 680px;
+    background-color: #fff;
+    transition: .3s ease;
+}
+
+.separadorPrincipal {
+    width: calc(100%-30px);
+    min-height: 660px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadroPresentacion {
+    width: 100%;
+    min-height: 310px;
+    background: linear-gradient(to right, #7d1f6d, #ab1a77, #dd1985);
+    display: flex;
+    flex-direction: column;
+}
+
+.separadorSecundario {
+    width: 100%;
+    min-height: 350px;
+    margin-top: 20px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadroOpciones {
+    min-height: 350px;
+    width: calc(60% - 10px);
+    margin-right: 20px;
+    background: linear-gradient(to top right, #f3631d, #ff9a18);
+    display: flex;
+    flex-direction: column;
+}
+
+.cuadroInfo {
+    min-height: 350px;
+    width: calc(40% - 10px);
+    background-image: url(../img/fondoInfo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -120px -1px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.imagenFondo {
+    min-height: 350px;
+    background: linear-gradient(to right, #9400d2 30%, #ac0ecf, #bf06cc);
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    filter: opacity(93%);
+}
+
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-corner {
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #a5a5a5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4645456b;
+    border-radius: 4px;
+}

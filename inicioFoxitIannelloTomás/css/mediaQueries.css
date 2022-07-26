@@ -1,0 +1,144 @@
+@media screen and (min-width: 1300px) {
+    .imagenPresentacion img { width: 250px; }
+}
+
+@media screen and (max-width: 1150px) {
+    .botonesPresentacion { display: flex; flex-direction: column; margin: 5% 0 2.5% 5%;}
+    .btnLicencia { margin: 10px 0 20px 0; }
+    .imagenPresentacion { top: 70px; }
+}
+
+@media screen and (min-width: 1060px) {
+    .btnLicencia { margin: 0; }
+    .fondo { padding: 15px 5%; }
+}
+
+@media screen and (min-width: 920px){ .btnLicencia { margin: 0; } }
+@media screen and (min-width: 920px) and (max-width: 950px){
+    .cabeceraPresentacion h2 { font-size: 28px; }
+}
+
+@media screen and (max-width: 920px){
+    .fondo { flex-direction: column;}
+    .cuadroArchivo {
+        position: fixed;
+        right: 0;
+        top: 5%;
+        z-index: 4;
+        box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.356);
+        min-height: 90px;
+        width: 200px;
+        user-select: none;
+    }
+    .separadorPrincipal { margin: 0; }
+    .cuadroPresentacion { width: 100%; align-items: center; }
+    .cabeceraPresentacion { width: 90%; }
+    .imagenPresentacion { left: 200px; top: -10px; z-index: 1; opacity: 20%;}
+    .imagenPresentacion img { width: 300px; height: 300px; }
+    .botonesPresentacion { margin: 20px 0 0 0; align-items: center; }
+    .btnPrueba { margin-right: 0; }
+    .btnLicencia { margin-top: 7px; }
+}
+
+@media screen and (max-width: 800px) {
+    .desplegarArchivo { visibility: visible; pointer-events: all; }
+    .desplegarArchivo:hover { box-shadow: 0 0 10px #f36b16; }
+    .oculto { position: fixed; transform: translateX(120%);}
+    .moverBoton {
+        transform: translate(-430%, 65%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .moverBoton::before{
+        content: url(../icons/cerrarIcono.svg);
+        position: absolute;
+        fill: #fff;
+        margin: 4px 0px 0 4px;
+    }
+    .moverBoton > * { display: none; }
+}
+
+@media screen and (max-width: 600px) {
+    .separadorSecundario { flex-direction: column; }
+    .cuadroOpciones { width: 100%; margin: 0 0 20px 0}
+    .cuadroInfo { width: 100%; }
+    .cabeceraPresentacion { align-items: center; margin: 20px 0}
+    .cabeceraPresentacion h1 { text-shadow: 0 0 4px rgba(0, 0, 0, 0.473);}
+    .cabeceraPresentacion h2 { font-size: 24px; }
+    .cabeceraPresentacion p { font-size: 16px; width: 65%; text-align: center;}
+    .imagenPresentacion { opacity: 12%; }
+}
+
+@media screen and (max-width: 450px) {
+    .fondo { padding: 0; overflow-x: hidden;}
+    .funcionesPDF { flex-direction: column; justify-content: flex-start;}
+    .funcionesPDF .columnaFuncion p {font-size: 16px;}
+    .titularHerramientas { margin-bottom: 30px; }
+
+    .lineaDeFuncion {
+        margin: 10px 0;
+        height: 1px;
+        width: 100%;
+        background-color: #fff;
+    }
+    .columnaFuncion { width: 90%; }
+
+    .col2 {
+        border-top: 1px solid #fff;
+        margin: 8px 0;
+        padding: 8px 0 10px 0;
+        transform: translateX(0%);
+    }
+
+    .cabeceraPresentacion h1 { font-size: 32px; }
+    .cabeceraPresentacion h2 { font-size: 23px; }
+    .cabeceraPresentacion p { font-size: 17px; width: 75%; text-align: center;}
+    .masInfo {
+        margin-top: 10px;
+        background: none;
+        border: 2px solid #fff;
+        line-height: 30px;
+        height: 30px;
+        padding: 0 5px;
+        border-radius: 30px;
+        transition: .3 ease;
+    }
+    .masInfo:hover { padding: 0 15px; text-decoration: none;}
+
+    .btnPrueba, .btnLicencia {
+        font-size: 12px;
+        padding: 0 17px;
+        height: 32px;
+        border-radius: 32px;
+    }
+
+    .btnPrueba:hover, .btnLicencia:hover {
+        font-size: 12px;
+        padding: 0 25px;
+    }
+
+    .lineaPleca{ display: none; }
+    .sublinea { flex-direction: column; }
+    .puntuacion img { width: 60px; height: 10px;}
+    .puntuacion p { font-size: 12px;}
+    .cuadroPresentacion{ margin-top: 30px; box-shadow: 0 0 50px 25px inset #e20c82; }
+    .cuadroOpciones { margin: 10px 0 30px 0; }
+
+    .desplegarArchivo {
+        width: max-content;
+        padding: 2px 10px;
+        height: 20px;
+        border-radius: 20px;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+        transform: translate(0%, -80%);
+    }
+    .i-archivo { display: none;}
+    .desplegarArchivo p { display: block;}
+    .desplegarArchivo::before {display: none;}
+    .moverBoton { transform: translate(-27%, -20%); padding: 2px 10px; box-shadow: none;}
+    .cuadroArchivo { margin-top: 20px; }
+}

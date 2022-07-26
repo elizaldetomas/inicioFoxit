@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+
+.cabeceraPresentacion {
+    width: 60%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 0 40px;
+    z-index: 2;
+}
+
+.cabeceraPresentacion > * {
+    margin: 0;
+    color: #fff;
+}
+
+.cabeceraPresentacion h1 {
+    font-size: 32px;
+    padding-bottom: 2px;
+}
+
+.cabeceraPresentacion h2 {
+    font-size: 30px;
+    font-weight: 300;
+    padding-bottom: 5px;
+}
+
+.cabeceraPresentacion > p {
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: .35px;
+}
+
+.sublinea {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.puntuacion {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.puntuacion img {
+    width: 85px;
+    height: 15px;
+    margin-right: 8px;
+}
+
+.puntuacion p {
+    margin: 0;
+    font-size: 15px;
+    letter-spacing: .5px;
+    font-weight: 300;
+}
+
+.lineaPleca {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0 5px;
+}
+
+.masInfo {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.masInfo:hover {
+    text-decoration: underline;
+}
+
+.imagenPresentacion {
+    position: relative;
+    z-index: 1;
+}
+
+.imagenPresentacion img {
+    width: 28%;  /* 260px */
+    position: absolute;
+    top: -150px;
+    right: 50px;
+}
+
+.botonesPresentacion {
+    margin: 38px 0 0 40px;
+    position: relative;
+    z-index: 3;
+    bottom: 12px;
+}
+
+.botonesPresentacion > * {
+    width: max-content;
+    padding: 0 30px;
+    margin: 5% 0 1% 0;
+    font-family: Poppins;
+    font-size: 15px;
+    height: 40px;
+    border-radius: 40px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.btnPrueba {
+    background-color: #0a7ddf;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.btnPrueba::selection { /* selección de texto */
+    background-color: #fff;
+    color: #0a7ddf;
+}
+
+.btnLicencia {
+    background-color: #fff;
+    color: #0a7ddf;
+}
+
+.botonesPresentacion > *:hover { padding: 0 38px;}
